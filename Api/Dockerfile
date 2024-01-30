@@ -17,9 +17,9 @@ RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get -y install wget && \
     wget -q https://github.com/DataDog/dd-trace-dotnet/releases/download/v2.46.0/datadog-dotnet-apm_2.46.0_amd64.deb && \
-    dpkg -i ./datadog-dotnet-apm_2.35.0_amd64.deb && \
+    dpkg -i ./datadog-dotnet-apm_2.46.0_amd64.deb && \
     /opt/datadog/createLogPath.sh && \
-    rm -f ./datadog-dotnet-apm_2.35.0_amd64.deb
+    rm -f ./datadog-dotnet-apm_2.46.0_amd64.deb
 
 # setup datadog tracing
 # refer to documentation found here: https://docs.datadoghq.com/tracing/trace_collection/automatic_instrumentation/dd_libraries/dotnet-core?tab=windows#linux-docker-container
